@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/glad.dir/external/glad/src/glad.c.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/glad/src/glad.c",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/glad/src/glad.c",
+  "output": "CMakeFiles/glad.dir/external/glad/src/glad.c.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/main.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/main.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/core/window.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/core/window.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/core/fps_counter.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/core/fps_counter.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/core/fps_counter.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/core/fps_counter.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/core/fps_counter.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/GUI/gui.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/GUI/gui.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/GUI/gui.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/GUI/gui.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/GUI/gui.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/Graphics/shader.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/Graphics/shader.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/shader.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/shader.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/Graphics/shader.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/Graphics/sphere.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/Graphics/sphere.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/sphere.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/sphere.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/Graphics/sphere.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/src/Graphics/renderer.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/src/Graphics/renderer.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/renderer.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/renderer.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/src/Graphics/renderer.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_draw.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_draw.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_draw.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_tables.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_tables.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_tables.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_widgets.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_widgets.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_widgets.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_demo.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_demo.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_demo.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_sdl3.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_sdl3.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_sdl3.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_sdl3.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_sdl3.cpp.o"
+},
+{
+  "directory": "/Users/redshifted/code/C++/OrbitalSimulation/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/Users/redshifted/code/C++/OrbitalSimulation/src -I/Users/redshifted/code/C++/OrbitalSimulation/src/core -I/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include -I/Users/redshifted/code/C++/OrbitalSimulation/external/glm -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui -I/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends -I/opt/homebrew/include -g -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk @CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.modmap -o CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
+}
+]
