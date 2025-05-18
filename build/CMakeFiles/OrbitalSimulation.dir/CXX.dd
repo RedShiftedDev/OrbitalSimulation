@@ -9,9 +9,11 @@ build CMakeFiles/OrbitalSimulation.dir/src/GUI/gui.cpp.o: dyndep
 
 build CMakeFiles/OrbitalSimulation.dir/src/Graphics/shader.cpp.o: dyndep
 
-build CMakeFiles/OrbitalSimulation.dir/src/Graphics/sphere.cpp.o: dyndep
+build CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o: dyndep
 
 build CMakeFiles/OrbitalSimulation.dir/src/Graphics/renderer.cpp.o: dyndep
+
+build CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/cubeSphere.cpp.o: dyndep
 
 build CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui.cpp.o: dyndep
 

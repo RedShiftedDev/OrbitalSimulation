@@ -1,6 +1,6 @@
 CMakeFiles/OrbitalSimulation.dir/src/core/fps_counter.cpp.o.ddi: \
-  /Users/redshifted/code/C++/OrbitalSimulation/src/core/fps_counter.cpp \
-  /Users/redshifted/code/C++/OrbitalSimulation/src/core/fps_counter.h \
+  /Users/redshifted/code/OrbitalSimulation/src/core/fps_counter.cpp \
+  /Users/redshifted/code/OrbitalSimulation/src/core/fps_counter.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/chrono \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config_site \

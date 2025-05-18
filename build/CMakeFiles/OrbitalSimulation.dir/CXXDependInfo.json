@@ -6,96 +6,101 @@
 	"config" : "Debug",
 	"cxx-modules" : {},
 	"database-info" : null,
-	"dir-cur-bld" : "/Users/redshifted/code/C++/OrbitalSimulation/build",
-	"dir-cur-src" : "/Users/redshifted/code/C++/OrbitalSimulation",
-	"dir-top-bld" : "/Users/redshifted/code/C++/OrbitalSimulation/build",
-	"dir-top-src" : "/Users/redshifted/code/C++/OrbitalSimulation",
+	"dir-cur-bld" : "/Users/redshifted/code/OrbitalSimulation/build",
+	"dir-cur-src" : "/Users/redshifted/code/OrbitalSimulation",
+	"dir-top-bld" : "/Users/redshifted/code/OrbitalSimulation/build",
+	"dir-top-src" : "/Users/redshifted/code/OrbitalSimulation",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
-		"/Users/redshifted/code/C++/OrbitalSimulation/src",
-		"/Users/redshifted/code/C++/OrbitalSimulation/src/core",
-		"/Users/redshifted/code/C++/OrbitalSimulation/external/glad/include",
-		"/Users/redshifted/code/C++/OrbitalSimulation/external/glm",
-		"/Users/redshifted/code/C++/OrbitalSimulation/external/imgui",
-		"/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends",
+		"/Users/redshifted/code/OrbitalSimulation/src",
+		"/Users/redshifted/code/OrbitalSimulation/src/core",
+		"/Users/redshifted/code/OrbitalSimulation/external/glad/include",
+		"/Users/redshifted/code/OrbitalSimulation/external/glm",
+		"/Users/redshifted/code/OrbitalSimulation/external/imgui",
+		"/Users/redshifted/code/OrbitalSimulation/external/imgui/backends",
 		"/opt/homebrew/include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
-	"module-dir" : "/Users/redshifted/code/C++/OrbitalSimulation/build/CMakeFiles/OrbitalSimulation.dir",
+	"module-dir" : "/Users/redshifted/code/OrbitalSimulation/build/CMakeFiles/OrbitalSimulation.dir",
 	"sources" : 
 	{
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_sdl3.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_sdl3.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/backends/imgui_impl_sdl3.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/imgui.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_demo.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_demo.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_demo.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_draw.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_draw.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_draw.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_tables.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_tables.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_tables.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_widgets.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_widgets.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_widgets.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/GUI/gui.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/GUI/gui.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/GUI/gui.cpp"
+		},
+		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/cubeSphere.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/cubeSphere.cpp"
+		},
+		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/renderer.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/renderer.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/renderer.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/shader.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/shader.cpp"
-		},
-		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/sphere.cpp.o" : 
-		{
-			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/Graphics/sphere.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/shader.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/core/fps_counter.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/core/fps_counter.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/core/fps_counter.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/core/window.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/core/window.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o" : 
 		{
 			"language" : "CXX",
-			"source" : "/Users/redshifted/code/C++/OrbitalSimulation/src/main.cpp"
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/main.cpp"
 		}
 	}
 }

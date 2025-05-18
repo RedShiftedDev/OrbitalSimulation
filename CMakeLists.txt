@@ -28,26 +28,31 @@ set(IMGUI_BACKENDS_SOURCES
 
 # Executable
 add_executable(${PROJECT_NAME} MACOSX_BUNDLE
+    ${IMGUI_SOURCES}
+    ${IMGUI_BACKENDS_SOURCES}
     src/main.cpp
     src/core/window.cpp
     src/core/fps_counter.cpp
-    src/GUI/gui.cpp
     src/Graphics/shader.cpp
-    src/Graphics/sphere.cpp
     src/Graphics/renderer.cpp
-    ${IMGUI_SOURCES}
-    ${IMGUI_BACKENDS_SOURCES}
+    src/GUI/gui.cpp
+    src/GUI/Scene.cpp
+    src/Graphics/core/RenderVisitor.cpp
+    src/Graphics/bodies/sphere.cpp
+    src/Graphics/bodies/cubeSphere.cpp
+    src/Graphics/lighting/Light.cpp
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE IMGUI_IMPL_OPENGL_LOADER_GLAD)
 
+# Add include directories
 target_include_directories(${PROJECT_NAME} PRIVATE
-    src
-    src/core
-    external/glad/include
-    external/glm
-    external/imgui
-    external/imgui/backends
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/src/core
+    ${CMAKE_SOURCE_DIR}/external/glad/include
+    ${CMAKE_SOURCE_DIR}/external/glm
+    ${CMAKE_SOURCE_DIR}/external/imgui
+    ${CMAKE_SOURCE_DIR}/external/imgui/backends
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE

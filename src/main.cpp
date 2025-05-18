@@ -1,15 +1,17 @@
 #include <glad/glad.h>
 #include <backends/imgui_impl_opengl3.h>
 #include <backends/imgui_impl_sdl3.h>
-#include <imgui.h>
-#include <iostream>
-#include "core/fps_counter.h"
-#include "GUI/gui.h"
-#include "core/window.h"
-#include "Graphics/renderer.h"
-#include "Graphics/sphere.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <imgui.h>
+#include <iostream>
+#include "GUI/gui.h"
+#include "GUI/Scene.h"
+#include "Graphics/renderer.h"
+#include "Graphics/bodies/sphere.h"
+#include "Graphics/bodies/cubeSphere.h"
+#include "core/fps_counter.h"
+#include "core/window.h"
 
 int main() {
   try {
@@ -23,62 +25,87 @@ int main() {
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO &io = ImGui::GetIO();
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;  // Enable Keyboard Controls
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;   // Enable Gamepad Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  // Enable Gamepad Controls
 
     ImGui::StyleColorsDark();
 
     ImGui_ImplSDL3_InitForOpenGL(window.getSDLWindow(), window.getGLContext());
     ImGui_ImplOpenGL3_Init("#version 410");
 
-    // Initialize renderer and create sphere
-    Renderer renderer;
-    Sphere sphere(1.0f, 36, 18); // radius = 1.0, 36 sectors, 18 stacks
+    // Initialize renderer and create scene
+    Renderer renderer(window);
+
+    // Create and add sphere to scene
+    auto sphere = std::make_shared<Sphere>(1.0F, 36, 18);
+    sphere->setPosition(glm::vec3(-2.0F, 0.0F, 0.0F));  // Position sphere to the left
+    sphere->setColor(glm::vec3(1.0F, 0.5F, 0.2F));      // Orange color
+    gui::getScene().addObject(sphere, "Sphere");
+
+    // Create and add cube sphere to scene
+    auto cubeSphere = std::make_shared<CubeSphere>(1.0F, 24);
+    cubeSphere->setPosition(glm::vec3(2.0F, 0.0F, 0.0F));  // Position cube sphere to the right
+    cubeSphere->setColor(glm::vec3(0.2F, 0.6F, 1.0F));     // Blue color
+    gui::getScene().addObject(cubeSphere, "CubeSphere");
 
     // Set initial settings
-    auto& settings = renderer.getSettings();
-    settings.fieldOfView = 45.0f;
-    settings.cameraPosition = glm::vec3(0.0f, 0.0f, 5.0f);
-    settings.cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
+    auto &settings = renderer.getSettings();
+    settings.fieldOfView = 45.0F;
+    settings.cameraPosition = glm::vec3(0.0F, 0.0F, 5.0F);
+    settings.cameraTarget = glm::vec3(0.0F, 0.0F, 0.0F);
     renderer.updateProjection();
 
     // Set initial background color
-    glClearColor(settings.backgroundColor.r, settings.backgroundColor.g, settings.backgroundColor.b, 1.0f);
+    glClearColor(settings.backgroundColor.r, settings.backgroundColor.g, settings.backgroundColor.b,
+                 1.0F);
     glEnable(GL_DEPTH_TEST);
 
+    renderer.init();
     FpsCounter fpsCounter;
 
-    while (!window.shouldClose()) {
-      window.pollEvents();
+    bool running = true;
+    while (running) {
+        SDL_Event event;
+        while (SDL_PollEvent(&event)) {
+            ImGui_ImplSDL3_ProcessEvent(&event);
+            if (event.type == SDL_EVENT_QUIT) {
+                running = false;
+            }
+            if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
+                running = false;
+            }
+        }
 
-      ImGui_ImplOpenGL3_NewFrame();
-      ImGui_ImplSDL3_NewFrame();
-      ImGui::NewFrame();
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplSDL3_NewFrame();
+        ImGui::NewFrame();
 
-      gui::RenderGui(fpsCounter, sphere, renderer);
+        // Update FPS counter
+        fpsCounter.update();
 
-      ImGui::Render();
+        // Render GUI
+        gui::RenderGui(fpsCounter, sphere, cubeSphere, renderer);
 
-      glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        // Render scene
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-      // Render the sphere
-      renderer.render(sphere);
+        // Render main scene objects
+        const gui::Scene& scene = gui::getScene();
+        renderer.render(scene);
 
-      ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
-      window.swapBuffers();
-
-      fpsCounter.update();
+        window.swapBuffers();
     }
 
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplSDL3_Shutdown();
+    ImGui::DestroyContext();
+
+    return 0;
   } catch (const std::exception &e) {
-    std::cerr << "Exception: " << e.what() << "\n";
+    std::cerr << "Error: " << e.what() << std::endl;
     return -1;
   }
-
-  ImGui_ImplOpenGL3_Shutdown();
-  ImGui_ImplSDL3_Shutdown();
-  ImGui::DestroyContext();
-
-  return 0;
 }

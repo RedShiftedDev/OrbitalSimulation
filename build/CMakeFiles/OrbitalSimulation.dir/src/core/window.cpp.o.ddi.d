@@ -1,6 +1,6 @@
 CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o.ddi: \
-  /Users/redshifted/code/C++/OrbitalSimulation/src/core/window.cpp \
-  /Users/redshifted/code/C++/OrbitalSimulation/src/core/window.h \
+  /Users/redshifted/code/OrbitalSimulation/src/core/window.cpp \
+  /Users/redshifted/code/OrbitalSimulation/src/core/window.h \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
   /opt/homebrew/include/SDL3/SDL_platform_defines.h \
@@ -157,25 +157,13 @@ CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o.ddi: \
   /opt/homebrew/include/SDL3/SDL_tray.h \
   /opt/homebrew/include/SDL3/SDL_version.h \
   /opt/homebrew/include/SDL3/SDL_oldnames.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdexcept \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__exception/exception.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/string.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/memory.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/memory_resource.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__verbose_abort \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/cstddef \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/version \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/byte.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/byte.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/enable_if.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_integral.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/integral_constant.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/remove_cv.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/max_align_t.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/nullptr_t.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/ptrdiff_t.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/size_t.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/cstdlib \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/backends/imgui_impl_sdl3.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imconfig.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
+  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/float.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/float.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/assert.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_stdlib.h \
@@ -213,6 +201,27 @@ CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o.ddi: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_abort.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_dev_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_mode_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_assert.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_static_assert.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdexcept \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__exception/exception.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/string.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/memory.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/memory_resource.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__verbose_abort \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/cstddef \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/version \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/byte.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/byte.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/enable_if.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_integral.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/integral_constant.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/remove_cv.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/max_align_t.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/nullptr_t.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/ptrdiff_t.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/size_t.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/cstdlib \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/exception \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__exception/exception_ptr.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__exception/operations.h \
@@ -339,13 +348,4 @@ CMakeFiles/OrbitalSimulation.dir/src/core/window.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/ostream.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/sstream.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/streambuf.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__std_mbstate_t.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_sdl3.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imconfig.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/float.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/float.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/assert.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_assert.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_static_assert.h
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__std_mbstate_t.h

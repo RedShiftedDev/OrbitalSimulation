@@ -1,7 +1,7 @@
 CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.ddi: \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.cpp \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imconfig.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.cpp \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imconfig.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config_site \
@@ -114,7 +114,7 @@ CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_static_assert.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/TargetConditionals.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdio.h \
@@ -124,7 +124,7 @@ CMakeFiles/OrbitalSimulation.dir/external/imgui/backends/imgui_impl_opengl3.cpp.
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_seek_set.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_ctermid.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_off_t.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3_loader.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/backends/imgui_impl_opengl3_loader.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/dlfcn.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdbool.h \
   /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stdbool.h

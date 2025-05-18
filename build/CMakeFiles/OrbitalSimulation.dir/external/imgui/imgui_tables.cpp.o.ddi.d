@@ -1,7 +1,7 @@
 CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_tables.cpp.o.ddi: \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_tables.cpp \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imconfig.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_tables.cpp \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imconfig.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config_site \
@@ -114,7 +114,7 @@ CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_tables.cpp.o.ddi: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_static_assert.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_internal.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_internal.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_stdio.h \

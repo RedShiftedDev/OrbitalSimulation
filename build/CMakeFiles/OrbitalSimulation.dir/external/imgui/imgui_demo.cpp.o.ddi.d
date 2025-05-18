@@ -1,7 +1,7 @@
 CMakeFiles/OrbitalSimulation.dir/external/imgui/imgui_demo.cpp.o.ddi: \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui_demo.cpp \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imgui.h \
-  /Users/redshifted/code/C++/OrbitalSimulation/external/imgui/imconfig.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_demo.cpp \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui.h \
+  /Users/redshifted/code/OrbitalSimulation/external/imgui/imconfig.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config_site \

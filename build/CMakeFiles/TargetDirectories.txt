@@ -1,4 +1,4 @@
-/Users/redshifted/code/C++/OrbitalSimulation/build/CMakeFiles/glad.dir
-/Users/redshifted/code/C++/OrbitalSimulation/build/CMakeFiles/OrbitalSimulation.dir
-/Users/redshifted/code/C++/OrbitalSimulation/build/CMakeFiles/edit_cache.dir
-/Users/redshifted/code/C++/OrbitalSimulation/build/CMakeFiles/rebuild_cache.dir
+/Users/redshifted/code/OrbitalSimulation/build/CMakeFiles/glad.dir
+/Users/redshifted/code/OrbitalSimulation/build/CMakeFiles/OrbitalSimulation.dir
+/Users/redshifted/code/OrbitalSimulation/build/CMakeFiles/edit_cache.dir
+/Users/redshifted/code/OrbitalSimulation/build/CMakeFiles/rebuild_cache.dir

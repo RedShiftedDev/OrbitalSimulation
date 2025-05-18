@@ -1,8 +1,8 @@
 #include "window.h"
-#include <stdexcept>
 #include <backends/imgui_impl_sdl3.h>
+#include <stdexcept>
 
-Window::Window(const char *title, const int width, const int height) {
+Window::Window(const char *title, int w, int h) : width(w), height(h) {
   if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS)) {
     throw std::runtime_error("Failed to initialize SDL");
   }
@@ -12,8 +12,9 @@ Window::Window(const char *title, const int width, const int height) {
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
   SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-  window = SDL_CreateWindow(title, width, height,
-      SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_HIGH_PIXEL_DENSITY);
+  window =
+      SDL_CreateWindow(title, width, height,
+                       SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_HIGH_PIXEL_DENSITY);
   if (window == nullptr) {
     throw std::runtime_error("Failed to create SDL window");
   }
