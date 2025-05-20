@@ -1,26 +1,9 @@
 CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.cpp \
   /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.h \
-  /Users/redshifted/code/OrbitalSimulation/external/glad/include/glad/glad.h \
-  /Users/redshifted/code/OrbitalSimulation/external/glad/include/KHR/khrplatform.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int8_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int16_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int32_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint8_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint16_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint32_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint64_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/cdefs.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_posix_availability.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/machine/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/arm/_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_ptrdiff_t.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/stddef.h \
+  /Users/redshifted/code/OrbitalSimulation/external/glm/glm/glm.hpp \
+  /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/_fixes.hpp \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/cmath \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__config_site \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/abi.h \
@@ -28,25 +11,6 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/platform.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/availability.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/language.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stddef.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_size_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_size_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_va_list.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stdarg.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_va_list.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_wchar_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_wchar_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_null.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_null.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_intptr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_uintptr_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_intmax_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/redshifted/code/OrbitalSimulation/external/glm/glm/glm.hpp \
-  /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/_fixes.hpp \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/cmath \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__math/hypot.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__math/abs.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/enable_if.h \
@@ -122,6 +86,40 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_trivially_constructible.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_trivially_copyable.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/cstdint \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uint64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/cdefs.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_posix_availability.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/machine/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/arm/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_ptrdiff_t.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/stddef.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/stddef.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_ptrdiff_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_size_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_va_list.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/stdarg.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_va_list.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_wchar_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_wchar_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_null.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_null.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_intmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_types/_uintmax_t.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_trivially_destructible.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_union.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__type_traits/is_unsigned.h \
@@ -230,17 +228,17 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_static_assert.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/cstddef \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_header_macro.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_nullptr_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_max_align_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_offsetof.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_header_macro.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_nullptr_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_max_align_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_offsetof.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/byte.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__fwd/byte.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/max_align_t.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/ptrdiff_t.h \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/../simd/platform.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/climits \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/limits.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/machine/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/arm/limits.h \
@@ -248,7 +246,7 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/syslimits.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/cfloat \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/float.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/float.h \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/fwd.hpp \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/qualifier.hpp \
@@ -537,11 +535,11 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/wchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/wchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_wchar.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_header_macro.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_va_arg.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg___va_copy.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_va_copy.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_header_macro.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg___gnuc_va_list.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_va_arg.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg___va_copy.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_va_copy.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_stdio.h \
@@ -924,7 +922,7 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_useconds_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_suseconds_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_rsize_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_rsize_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_rsize_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_errno_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_fd_def.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_fd_setsize.h \
@@ -1049,6 +1047,79 @@ CMakeFiles/OrbitalSimulation.dir/src/Graphics/bodies/sphere.cpp.o.ddi: \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/type_half.inl \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/integer.hpp \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/func_integer.inl \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/Object3D.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/ObjectVisitor.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/RenderVisitor.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/map \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__tree \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/shader.h \
+  /Users/redshifted/code/OrbitalSimulation/external/glad/include/glad/glad.h \
+  /Users/redshifted/code/OrbitalSimulation/external/glad/include/KHR/khrplatform.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/lighting/Light.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/SceneObject.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/renderer.h \
+  /Users/redshifted/code/OrbitalSimulation/src/core/window.h \
+  /opt/homebrew/include/SDL3/SDL.h \
+  /opt/homebrew/include/SDL3/SDL_stdinc.h \
+  /opt/homebrew/include/SDL3/SDL_platform_defines.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/AvailabilityMacros.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/TargetConditionals.h \
+  /opt/homebrew/include/SDL3/SDL_begin_code.h \
+  /opt/homebrew/include/SDL3/SDL_close_code.h \
+  /opt/homebrew/include/SDL3/SDL_assert.h \
+  /opt/homebrew/include/SDL3/SDL_asyncio.h \
+  /opt/homebrew/include/SDL3/SDL_atomic.h \
+  /opt/homebrew/include/SDL3/SDL_audio.h \
+  /opt/homebrew/include/SDL3/SDL_endian.h \
+  /opt/homebrew/include/SDL3/SDL_error.h \
+  /opt/homebrew/include/SDL3/SDL_mutex.h \
+  /opt/homebrew/include/SDL3/SDL_thread.h \
+  /opt/homebrew/include/SDL3/SDL_properties.h \
+  /opt/homebrew/include/SDL3/SDL_iostream.h \
+  /opt/homebrew/include/SDL3/SDL_bits.h \
+  /opt/homebrew/include/SDL3/SDL_blendmode.h \
+  /opt/homebrew/include/SDL3/SDL_camera.h \
+  /opt/homebrew/include/SDL3/SDL_pixels.h \
+  /opt/homebrew/include/SDL3/SDL_surface.h \
+  /opt/homebrew/include/SDL3/SDL_rect.h \
+  /opt/homebrew/include/SDL3/SDL_clipboard.h \
+  /opt/homebrew/include/SDL3/SDL_cpuinfo.h \
+  /opt/homebrew/include/SDL3/SDL_dialog.h \
+  /opt/homebrew/include/SDL3/SDL_video.h \
+  /opt/homebrew/include/SDL3/SDL_events.h \
+  /opt/homebrew/include/SDL3/SDL_gamepad.h \
+  /opt/homebrew/include/SDL3/SDL_guid.h \
+  /opt/homebrew/include/SDL3/SDL_joystick.h \
+  /opt/homebrew/include/SDL3/SDL_power.h \
+  /opt/homebrew/include/SDL3/SDL_sensor.h \
+  /opt/homebrew/include/SDL3/SDL_keyboard.h \
+  /opt/homebrew/include/SDL3/SDL_keycode.h \
+  /opt/homebrew/include/SDL3/SDL_scancode.h \
+  /opt/homebrew/include/SDL3/SDL_mouse.h \
+  /opt/homebrew/include/SDL3/SDL_pen.h \
+  /opt/homebrew/include/SDL3/SDL_touch.h \
+  /opt/homebrew/include/SDL3/SDL_filesystem.h \
+  /opt/homebrew/include/SDL3/SDL_gpu.h \
+  /opt/homebrew/include/SDL3/SDL_haptic.h \
+  /opt/homebrew/include/SDL3/SDL_hidapi.h \
+  /opt/homebrew/include/SDL3/SDL_hints.h \
+  /opt/homebrew/include/SDL3/SDL_init.h \
+  /opt/homebrew/include/SDL3/SDL_loadso.h \
+  /opt/homebrew/include/SDL3/SDL_locale.h \
+  /opt/homebrew/include/SDL3/SDL_log.h \
+  /opt/homebrew/include/SDL3/SDL_messagebox.h \
+  /opt/homebrew/include/SDL3/SDL_metal.h \
+  /opt/homebrew/include/SDL3/SDL_misc.h \
+  /opt/homebrew/include/SDL3/SDL_platform.h \
+  /opt/homebrew/include/SDL3/SDL_process.h \
+  /opt/homebrew/include/SDL3/SDL_render.h \
+  /opt/homebrew/include/SDL3/SDL_storage.h \
+  /opt/homebrew/include/SDL3/SDL_system.h \
+  /opt/homebrew/include/SDL3/SDL_time.h \
+  /opt/homebrew/include/SDL3/SDL_timer.h \
+  /opt/homebrew/include/SDL3/SDL_tray.h \
+  /opt/homebrew/include/SDL3/SDL_version.h \
+  /opt/homebrew/include/SDL3/SDL_oldnames.h \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/gtc/matrix_transform.hpp \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/gtc/../ext/matrix_projection.hpp \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/gtc/../ext/../gtc/constants.hpp \

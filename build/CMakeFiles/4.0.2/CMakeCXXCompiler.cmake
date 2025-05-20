@@ -1,7 +1,7 @@
 set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/bin/clang++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
-set(CMAKE_CXX_COMPILER_VERSION "20.1.2")
+set(CMAKE_CXX_COMPILER_VERSION "20.1.5")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -19,15 +19,16 @@ set(CMAKE_CXX26_COMPILE_FEATURES "cxx_std_26")
 set(CMAKE_CXX_PLATFORM_ID "Darwin")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
+set(CMAKE_CXX_COMPILER_APPLE_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
 
 set(CMAKE_AR "/opt/anaconda3/bin/ar")
-set(CMAKE_CXX_COMPILER_AR "/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ar")
 set(CMAKE_RANLIB "/opt/homebrew/opt/llvm/bin/llvm-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ranlib")
 set(CMAKE_LINKER "/opt/anaconda3/bin/ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
@@ -89,11 +90,11 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/20.1.2/include/c++/v1;/opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/20.1.5/include/c++/v1;/opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks")
-set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20")
+set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
 ### Imported target for C++23 standard library

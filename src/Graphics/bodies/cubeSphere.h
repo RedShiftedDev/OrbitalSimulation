@@ -35,10 +35,11 @@ public:
   void setResolution(int res);
   int getResolution() const { return resolution; }
 
-  void setSize(float s) {
-    size = s;
+  void setSize(const float s) {
+    this->size = s;
     rebuild();
   }
+
   float getSize() const { return size; }
 
 private:

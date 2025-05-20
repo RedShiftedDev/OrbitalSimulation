@@ -1,7 +1,7 @@
 #include "cubeSphere.h"
+
 #include <glad/glad.h>
 #include <glm/gtc/matrix_transform.hpp>
-#include "Graphics/core/RenderVisitor.h"
 
 CubeSphere::CubeSphere(float s, int res) : size(s), resolution(res) {
   rebuild();

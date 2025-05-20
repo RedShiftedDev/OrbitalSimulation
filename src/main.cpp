@@ -25,26 +25,26 @@ int main() {
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO &io = ImGui::GetIO();
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  // Enable Gamepad Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
 
     ImGui::StyleColorsDark();
 
     ImGui_ImplSDL3_InitForOpenGL(window.getSDLWindow(), window.getGLContext());
     ImGui_ImplOpenGL3_Init("#version 410");
 
-    // Initialize renderer and create scene
+    // Initialize the renderer and create a scene
     Renderer renderer(window);
 
-    // Create and add sphere to scene
+    // Create and add a sphere to a scene
     auto sphere = std::make_shared<Sphere>(1.0F, 36, 18);
     sphere->setPosition(glm::vec3(-2.0F, 0.0F, 0.0F));  // Position sphere to the left
     sphere->setColor(glm::vec3(1.0F, 0.5F, 0.2F));      // Orange color
     gui::getScene().addObject(sphere, "Sphere");
 
-    // Create and add cube sphere to scene
+    // Create and add a cube sphere to a scene
     auto cubeSphere = std::make_shared<CubeSphere>(1.0F, 24);
-    cubeSphere->setPosition(glm::vec3(2.0F, 0.0F, 0.0F));  // Position cube sphere to the right
+    cubeSphere->setPosition(glm::vec3(2.0F, 0.0F, 0.0F));  // Position a cube sphere to the right
     cubeSphere->setColor(glm::vec3(0.2F, 0.6F, 1.0F));     // Blue color
     gui::getScene().addObject(cubeSphere, "CubeSphere");
 
@@ -55,7 +55,7 @@ int main() {
     settings.cameraTarget = glm::vec3(0.0F, 0.0F, 0.0F);
     renderer.updateProjection();
 
-    // Set initial background color
+    // Set the initial background color
     glClearColor(settings.backgroundColor.r, settings.backgroundColor.g, settings.backgroundColor.b,
                  1.0F);
     glEnable(GL_DEPTH_TEST);

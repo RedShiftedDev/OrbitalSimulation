@@ -1,8 +1,8 @@
 #include "sphere.h"
-#include "Graphics/core/RenderVisitor.h"
-#include <glad/glad.h>  // Fixed include path
-#include <glm/gtc/matrix_transform.hpp>
+#include <glad/glad.h> // Fixed include path
 #include <cmath>
+#include <glm/gtc/matrix_transform.hpp>
+#include "Graphics/core/RenderVisitor.h"
 
 Sphere::Sphere(float r, int sectors, int stacks)
     : radius(r), sectors(sectors), stacks(stacks) {

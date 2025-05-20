@@ -27,13 +27,13 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_CXX_COMPILER:STRING=/opt/homebrew/opt/llvm/bin/clang++
 
 //LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ar
 
 //`clang-scan-deps` dependency scanner
-CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.2/bin/clang-scan-deps
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.5/bin/clang-scan-deps
 
 //Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -54,13 +54,13 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_C_COMPILER:STRING=/opt/homebrew/opt/llvm/bin/clang
 
 //LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ar
 
 //`clang-scan-deps` dependency scanner
-CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.2/bin/clang-scan-deps
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.5/bin/clang-scan-deps
 
 //Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -258,7 +258,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=0
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/opt/homebrew/bin/cmake
 //Path to cpack program executable.

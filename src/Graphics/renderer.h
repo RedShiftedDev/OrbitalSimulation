@@ -33,6 +33,16 @@ public:
         int gridDivisions = 20;
         glm::vec3 gridColor{0.5f, 0.5f, 0.5f};
         float gridFadeDistance = 100.0f;
+
+        // New Grid Settings
+        float gridOpacity = 0.7f;
+        glm::vec3 majorGridColor{0.4f, 0.4f, 0.4f};
+        float minorLineWidth = 1.0f;
+        float majorLineWidth = 2.0f;
+        float majorGridSpacing = 5.0f;
+        bool showAxisLines = true;
+        glm::vec3 xAxisColor{0.8f, 0.2f, 0.2f};
+        glm::vec3 zAxisColor{0.2f, 0.2f, 0.8f};
     };
 
     explicit Renderer(Window& window);

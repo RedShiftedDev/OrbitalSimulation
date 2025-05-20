@@ -62,6 +62,11 @@
 			"language" : "CXX",
 			"source" : "/Users/redshifted/code/OrbitalSimulation/external/imgui/imgui_widgets.cpp"
 		},
+		"CMakeFiles/OrbitalSimulation.dir/src/GUI/Scene.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/GUI/Scene.cpp"
+		},
 		"CMakeFiles/OrbitalSimulation.dir/src/GUI/gui.cpp.o" : 
 		{
 			"language" : "CXX",
@@ -76,6 +81,16 @@
 		{
 			"language" : "CXX",
 			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.cpp"
+		},
+		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/core/RenderVisitor.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/core/RenderVisitor.cpp"
+		},
+		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/lighting/Light.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/Users/redshifted/code/OrbitalSimulation/src/Graphics/lighting/Light.cpp"
 		},
 		"CMakeFiles/OrbitalSimulation.dir/src/Graphics/renderer.cpp.o" : 
 		{

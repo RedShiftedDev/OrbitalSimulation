@@ -25,8 +25,8 @@ struct SceneObject {
 };
 
 // Update function signature to use shared_ptr
-void RenderGui(const FpsCounter& fpsCounter, std::shared_ptr<Sphere>& sphere, 
-               std::shared_ptr<CubeSphere>& cubeSphere, Renderer& renderer);
+void RenderGui(const FpsCounter& fpsCounter, const std::shared_ptr<Sphere>& sphere,
+               const std::shared_ptr<CubeSphere>& cubeSphere, Renderer& renderer);
 Scene& getScene();
 
 // Update function declarations to accept const references

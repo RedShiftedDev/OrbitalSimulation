@@ -1,15 +1,15 @@
 #include "GUI/gui.h"
-#include "Scene.h"
-#include "Graphics/bodies/sphere.h"
-#include "Graphics/bodies/cubeSphere.h"
-#include "Graphics/core/RenderVisitor.h"
+#include <glm/gtc/type_ptr.hpp>
 #include <imgui.h>
 #include <imgui_internal.h>
-#include <glm/gtc/type_ptr.hpp>
+#include <iostream>
 #include <string>
 #include <vector>
-#include <iostream>
+#include "Graphics/bodies/cubeSphere.h"
+#include "Graphics/bodies/sphere.h"
+#include "Graphics/core/RenderVisitor.h"
 #include "Graphics/renderer.h"
+#include "Scene.h"
 #include "core/fps_counter.h"
 
 namespace gui {
@@ -32,9 +32,6 @@ struct GuiState {
   bool showHelpTooltips = true;
   std::vector<std::string> presets;
   int selectedPreset = -1;
-  bool autoRotate = false;
-  float rotationSpeed = 1.0F;
-  bool linkScaleValues = false;
   glm::vec3 lastSavedCameraPos = glm::vec3(0.0F);
   glm::vec3 lastSavedCameraTarget = glm::vec3(0.0F);
   float splitRatio = 0.5F;
@@ -44,33 +41,30 @@ struct GuiState {
 static GuiState guiState;
 
 namespace {
-    // Static instance for the Scene singleton
-    static Scene instance;
+// Static instance for the Scene singleton
+Scene instance;
 
-    void CreateNewObject(const std::string& name, const std::string& type,
-                        const glm::vec3& position, const glm::vec3& color,
-                        float size, int resolution) {
-        std::shared_ptr<Object3D> newObject;
+void CreateNewObject(const std::string &name, const std::string &type, const glm::vec3 &position,
+                     const glm::vec3 &color, float size, int resolution) {
+  std::shared_ptr<Object3D> newObject;
 
-        if (type == "Sphere") {
-            newObject = std::make_shared<Sphere>(size, resolution);
-            newObject->setPosition(position);
-            newObject->setColor(color);
-        } else if (type == "CubeSphere") {
-            newObject = std::make_shared<CubeSphere>(size, resolution);
-            newObject->setPosition(position);
-            newObject->setColor(color);
-        }
+  if (type == "Sphere") {
+    newObject = std::make_shared<Sphere>(size, resolution);
+    newObject->setPosition(position);
+    newObject->setColor(color);
+  } else if (type == "CubeSphere") {
+    newObject = std::make_shared<CubeSphere>(size, resolution);
+    newObject->setPosition(position);
+    newObject->setColor(color);
+  }
 
-        if (newObject) {
-            instance.addObject(newObject, name);
-        }
-    }
+  if (newObject) {
+    instance.addObject(newObject, name);
+  }
 }
+} // namespace
 
-Scene& getScene() {
-    return instance;
-}
+Scene &getScene() { return instance; }
 
 // Helper functions
 void SetupStyle() {
@@ -171,14 +165,14 @@ bool Vec3Control(const char *label, glm::vec3 &values, float resetValue = 0.0F, 
   ImGui::Columns(1);
   ImGui::PopID();
 
-  // Link scale values if needed
-  if (guiState.linkScaleValues && std::string(label) == "Scale") {
-    if (values.x != values.y || values.x != values.z) {
-      values.y = values.x;
-      values.z = values.x;
-      changed = true;
-    }
-  }
+  // // Link scale values if needed
+  // if (guiState.linkScaleValues && std::string(label) == "Scale") {
+  //   if (values.x != values.y || values.x != values.z) {
+  //     values.y = values.x;
+  //     values.z = values.x;
+  //     changed = true;
+  //   }
+  // }
 
   return changed;
 }
@@ -190,8 +184,8 @@ bool ColorControl(const char *label, glm::vec3 &color) {
   ImGui::Text("%s", label);
   ImGui::NextColumn();
 
-  bool changed = ImGui::ColorEdit3("##color", &color[0],
-                                   ImGuiColorEditFlags_Float | ImGuiColorEditFlags_PickerHueWheel);
+  const bool changed = ImGui::ColorEdit3(
+      "##color", &color[0], ImGuiColorEditFlags_Float | ImGuiColorEditFlags_PickerHueWheel);
 
   ImGui::Columns(1);
   ImGui::PopID();
@@ -222,7 +216,7 @@ void PresetSelector(const char *label, int &selected, const std::vector<std::str
   }
 }
 
-void MainMenuBar(const FpsCounter& fpsCounter) {
+void MainMenuBar(const FpsCounter &fpsCounter) {
   if (ImGui::BeginMainMenuBar()) {
     if (ImGui::BeginMenu("File")) {
       if (ImGui::MenuItem("New Scene", "Ctrl+N")) {
@@ -273,9 +267,10 @@ void MainMenuBar(const FpsCounter& fpsCounter) {
   }
 }
 
-void PerformanceWindow(const FpsCounter& fpsCounter) {
-  if (!guiState.showPerformance)
+void PerformanceWindow(const FpsCounter &fpsCounter) {
+  if (!guiState.showPerformance) {
     return;
+  }
 
   ImGui::Begin("Performance Metrics", &guiState.showPerformance);
 
@@ -286,12 +281,12 @@ void PerformanceWindow(const FpsCounter& fpsCounter) {
   ImGui::Text("Frame Time: %.2f ms", 1000.0F / fpsCounter.getFps());
 
   // Simple graph for FPS
-  static float values[90] = {0};
+  static float values[90] = {};
   static int values_offset = 0;
   static float refresh_time = 0.0F;
 
   float current_time = ImGui::GetTime();
-  if (current_time - refresh_time >= 0.1F) {  // Update every 100ms
+  if (current_time - refresh_time >= 0.1F) { // Update every 100 ms
     values[values_offset] = fpsCounter.getFps();
     values_offset = (values_offset + 1) % IM_ARRAYSIZE(values);
     refresh_time = current_time;
@@ -301,7 +296,7 @@ void PerformanceWindow(const FpsCounter& fpsCounter) {
   for (int n = 0; n < IM_ARRAYSIZE(values); n++) {
     average += values[n];
   }
-  average /= (float)IM_ARRAYSIZE(values);
+  average /= static_cast<float>(IM_ARRAYSIZE(values));
 
   char overlay[32];
   snprintf(overlay, sizeof(overlay), "Avg %.1f FPS", average);
@@ -312,197 +307,242 @@ void PerformanceWindow(const FpsCounter& fpsCounter) {
 }
 
 void RenderSceneControls(Renderer &renderer, bool &sceneUpdated) {
-    auto &settings = renderer.getSettings();
+  auto &settings = renderer.getSettings();
 
-    // Camera Controls
-    if (ImGui::CollapsingHeader("Camera", ImGuiTreeNodeFlags_DefaultOpen)) {
-        sceneUpdated |= Vec3Control("Position", settings.cameraPosition, 0.0F, 0.1F);
-        sceneUpdated |= Vec3Control("Target", settings.cameraTarget, 0.0F, 0.1F);
+  // Camera Controls
+  if (ImGui::CollapsingHeader("Camera", ImGuiTreeNodeFlags_DefaultOpen)) {
+    sceneUpdated |= Vec3Control("Position", settings.cameraPosition, 0.0F, 0.1F);
+    sceneUpdated |= Vec3Control("Target", settings.cameraTarget, 0.0F, 0.1F);
 
-        sceneUpdated |= ImGui::SliderFloat("Field of View", &settings.fieldOfView, 10.0F, 120.0F);
-        ImGui::SameLine();
-        HelpMarker("Controls camera zoom level");
+    sceneUpdated |= ImGui::SliderFloat("Field of View", &settings.fieldOfView, 10.0F, 120.0F);
+    ImGui::SameLine();
+    HelpMarker("Controls camera zoom level");
 
-        // Camera Presets
-        ImGui::Separator();
-        ImGui::Text("Camera Presets");
-        ImGui::SameLine();
-        HelpMarker("Save and load camera positions");
+    // Camera Presets
+    ImGui::Separator();
+    ImGui::Text("Camera Presets");
+    ImGui::SameLine();
+    HelpMarker("Save and load camera positions");
 
-        static char presetName[64] = "Default View";
-        ImGui::InputText("Name", presetName, IM_ARRAYSIZE(presetName));
+    static char presetName[64] = "Default View";
+    ImGui::InputText("Name", presetName, IM_ARRAYSIZE(presetName));
 
-        if (ImGui::Button("Save Current")) {
-            SaveCameraPreset(presetName, settings.cameraPosition, settings.cameraTarget);
-        }
-
-        ImGui::SameLine();
-
-        if (ImGui::Button("Reset Camera")) {
-            settings.cameraPosition = glm::vec3(0.0F, 0.0F, 5.0F);
-            settings.cameraTarget = glm::vec3(0.0F, 0.0F, 0.0F);
-            sceneUpdated = true;
-        }
-
-        if (!guiState.presets.empty()) {
-            PresetSelector("Load Preset", guiState.selectedPreset, guiState.presets);
-
-            if (guiState.selectedPreset >= 0 && ImGui::Button("Apply Selected")) {
-                settings.cameraPosition = guiState.lastSavedCameraPos;
-                settings.cameraTarget = guiState.lastSavedCameraTarget;
-                sceneUpdated = true;
-            }
-        }
+    if (ImGui::Button("Save Current")) {
+      SaveCameraPreset(presetName, settings.cameraPosition, settings.cameraTarget);
     }
 
-    // Scene Options
-    if (ImGui::CollapsingHeader("Scene Options", ImGuiTreeNodeFlags_DefaultOpen)) {
-        bool wireframeMode = renderer.isWireframe();
-        if (ImGui::Checkbox("Wireframe Mode", &wireframeMode)) {
-            renderer.setWireframe(wireframeMode);
-        }
+    ImGui::SameLine();
 
-        // Grid Controls
-        if (ImGui::TreeNode("Grid Settings")) {
-            bool gridUpdated = false;
-
-            gridUpdated |= ImGui::Checkbox("Show Grid", &settings.showGrid);
-            
-            if (settings.showGrid) {
-                // Grid Size
-                if (ImGui::SliderFloat("Grid Size", &settings.gridSize, 5.0f, 100.0f, "%.1f")) {
-                    gridUpdated = true;
-                }
-                ImGui::SameLine();
-                HelpMarker("Controls the total size of the grid");
-
-                // Grid Divisions
-                if (ImGui::SliderInt("Grid Divisions", &settings.gridDivisions, 5, 100)) {
-                    gridUpdated = true;
-                }
-                ImGui::SameLine();
-                HelpMarker("Controls how many lines make up the grid");
-
-                // Grid Color
-                if (ImGui::ColorEdit3("Grid Color", &settings.gridColor[0])) {
-                    gridUpdated = true;
-                }
-                ImGui::SameLine();
-                HelpMarker("Color of the grid lines");
-
-                // Grid Fade Distance
-                if (ImGui::SliderFloat("Fade Distance", &settings.gridFadeDistance, 10.0f, 200.0f, "%.1f")) {
-                    gridUpdated = true;
-                }
-                ImGui::SameLine();
-                HelpMarker("Distance at which the grid fades out");
-            }
-
-            if (gridUpdated) {
-                renderer.initGrid();
-            }
-
-            ImGui::TreePop();
-        }
-
-        // Auto-Rotate Options
-        ImGui::Checkbox("Auto-Rotate Objects", &guiState.autoRotate);
-        if (guiState.autoRotate) {
-            ImGui::SliderFloat("Rotation Speed", &guiState.rotationSpeed, 0.1F, 5.0F);
-        }
+    if (ImGui::Button("Reset Camera")) {
+      settings.cameraPosition = glm::vec3(0.0F, 0.0F, 5.0F);
+      settings.cameraTarget = glm::vec3(0.0F, 0.0F, 0.0F);
+      sceneUpdated = true;
     }
+
+    if (!guiState.presets.empty()) {
+      PresetSelector("Load Preset", guiState.selectedPreset, guiState.presets);
+
+      if (guiState.selectedPreset >= 0 && ImGui::Button("Apply Selected")) {
+        settings.cameraPosition = guiState.lastSavedCameraPos;
+        settings.cameraTarget = guiState.lastSavedCameraTarget;
+        sceneUpdated = true;
+      }
+    }
+  }
+
+  // Scene Options
+  if (ImGui::CollapsingHeader("Scene Options", ImGuiTreeNodeFlags_DefaultOpen)) {
+    bool wireframeMode = renderer.isWireframe();
+    if (ImGui::Checkbox("Wireframe Mode", &wireframeMode)) {
+      renderer.setWireframe(wireframeMode);
+    }
+
+    // Grid Controls
+    if (ImGui::TreeNode("Grid Settings")) {
+      bool gridUpdated = false;
+
+      gridUpdated |= ImGui::Checkbox("Show Grid", &settings.showGrid);
+
+      if (settings.showGrid) {
+        // Basic Grid Settings
+        if (ImGui::CollapsingHeader("Basic Settings", ImGuiTreeNodeFlags_DefaultOpen)) {
+          gridUpdated |= ImGui::SliderFloat("Grid Size", &settings.gridSize, 5.0f, 100.0f, "%.1f");
+          ImGui::SameLine();
+          HelpMarker("Controls the total size of the grid");
+
+          gridUpdated |= ImGui::SliderInt("Grid Divisions", &settings.gridDivisions, 5, 100);
+          ImGui::SameLine();
+          HelpMarker("Controls how many lines make up the grid");
+
+          gridUpdated |=
+              ImGui::SliderFloat("Grid Opacity", &settings.gridOpacity, 0.0f, 1.0f, "%.2f");
+          ImGui::SameLine();
+          HelpMarker("Controls overall grid transparency");
+        }
+
+        // Visual Settings
+        if (ImGui::CollapsingHeader("Visual Settings", ImGuiTreeNodeFlags_DefaultOpen)) {
+          gridUpdated |= ColorControl("Minor Grid Color", settings.gridColor);
+          gridUpdated |= ColorControl("Major Grid Color", settings.majorGridColor);
+
+          gridUpdated |=
+              ImGui::SliderFloat("Minor Line Width", &settings.minorLineWidth, 0.5f, 3.0f, "%.1f");
+          gridUpdated |=
+              ImGui::SliderFloat("Major Line Width", &settings.majorLineWidth, 1.0f, 5.0f, "%.1f");
+
+          gridUpdated |= ImGui::SliderFloat("Major Grid Spacing", &settings.majorGridSpacing, 2.0f,
+                                            10.0f, "%.0f");
+          ImGui::SameLine();
+          HelpMarker("Number of minor grid cells between major grid lines");
+        }
+
+        // Axis Settings
+        if (ImGui::CollapsingHeader("Axis Lines", ImGuiTreeNodeFlags_DefaultOpen)) {
+          gridUpdated |= ImGui::Checkbox("Show Axis Lines", &settings.showAxisLines);
+          if (settings.showAxisLines) {
+            gridUpdated |= ColorControl("X-Axis Color", settings.xAxisColor);
+            gridUpdated |= ColorControl("Z-Axis Color", settings.zAxisColor);
+          }
+        }
+
+        // Fade Settings
+        if (ImGui::CollapsingHeader("Fade Settings", ImGuiTreeNodeFlags_DefaultOpen)) {
+          gridUpdated |= ImGui::SliderFloat("Fade Distance", &settings.gridFadeDistance, 10.0f,
+                                            200.0f, "%.1f");
+          ImGui::SameLine();
+          HelpMarker("Distance at which the grid fades out");
+        }
+
+        // Grid Presets
+        if (ImGui::TreeNode("Grid Presets")) {
+          if (ImGui::Button("Engineering")) {
+            settings.gridColor = glm::vec3(0.2f, 0.2f, 0.2f);
+            settings.majorGridColor = glm::vec3(0.4f, 0.4f, 0.4f);
+            settings.majorGridSpacing = 5.0f;
+            settings.gridOpacity = 0.7f;
+            settings.showAxisLines = true;
+            gridUpdated = true;
+          }
+          ImGui::SameLine();
+          if (ImGui::Button("Blueprint")) {
+            settings.gridColor = glm::vec3(0.1f, 0.3f, 0.6f);
+            settings.majorGridColor = glm::vec3(0.2f, 0.4f, 0.8f);
+            settings.majorGridSpacing = 4.0f;
+            settings.gridOpacity = 0.5f;
+            settings.showAxisLines = true;
+            gridUpdated = true;
+          }
+          ImGui::SameLine();
+          if (ImGui::Button("Minimal")) {
+            settings.gridColor = glm::vec3(0.15f);
+            settings.majorGridColor = glm::vec3(0.3f);
+            settings.majorGridSpacing = 2.0f;
+            settings.gridOpacity = 0.3f;
+            settings.showAxisLines = false;
+            gridUpdated = true;
+          }
+          ImGui::TreePop();
+        }
+      }
+
+      if (gridUpdated) {
+        renderer.initGrid();
+      }
+
+      ImGui::TreePop();
+    }
+  }
 }
 
-void RenderLightingControls(std::vector<std::shared_ptr<Light>>& lights) {
-    if (ImGui::CollapsingHeader("Lighting", ImGuiTreeNodeFlags_DefaultOpen)) {
-        // Add Light button
-        if (ImGui::Button("Add Light")) {
-            lights.push_back(std::make_shared<Light>(
-                "Light " + std::to_string(lights.size() + 1)));
-        }
-
-        // Light list
-        for (size_t i = 0; i < lights.size(); i++) {
-            auto& light = lights[i];
-            if (ImGui::TreeNode((light->getName() + "##" + std::to_string(i)).c_str())) {
-                // Position control
-                glm::vec3 position = light->getPosition();
-                if (Vec3Control("Position", position)) {
-                    light->setPosition(position);
-                }
-
-                // Color control
-                glm::vec3 color = light->getColor();
-                if (ColorControl("Color", color)) {
-                    light->setColor(color);
-                }
-
-                // Intensity slider
-                float intensity = light->getIntensity();
-                if (ImGui::SliderFloat("Intensity", &intensity, 0.0f, 2.0f)) {
-                    light->setIntensity(intensity);
-                }
-
-                // Light properties
-                float ambient = light->getAmbientStrength();
-                if (ImGui::SliderFloat("Ambient", &ambient, 0.0f, 1.0f)) {
-                    light->setAmbientStrength(ambient);
-                }
-
-                float diffuse = light->getDiffuseStrength();
-                if (ImGui::SliderFloat("Diffuse", &diffuse, 0.0f, 1.0f)) {
-                    light->setDiffuseStrength(diffuse);
-                }
-
-                float specular = light->getSpecularStrength();
-                if (ImGui::SliderFloat("Specular", &specular, 0.0f, 1.0f)) {
-                    light->setSpecularStrength(specular);
-                }
-
-                float shininess = light->getShininess();
-                if (ImGui::SliderFloat("Shininess", &shininess, 1.0f, 256.0f)) {
-                    light->setShininess(shininess);
-                }
-
-                // Delete button
-                if (ImGui::Button("Delete") && lights.size() > 1) {
-                    lights.erase(lights.begin() + i);
-                    ImGui::TreePop();
-                    break;
-                }
-
-                ImGui::TreePop();
-            }
-        }
-
-        // Lighting presets
-        if (ImGui::TreeNode("Lighting Presets")) {
-            if (ImGui::Button("Daylight")) {
-                lights[0]->setColor(glm::vec3(1.0f, 0.95f, 0.8f));
-                lights[0]->setIntensity(1.0f);
-                lights[0]->setAmbientStrength(0.3f);
-                lights[0]->setDiffuseStrength(0.7f);
-                lights[0]->setSpecularStrength(0.3f);
-            }
-            ImGui::SameLine();
-            if (ImGui::Button("Night")) {
-                lights[0]->setColor(glm::vec3(0.1f, 0.1f, 0.3f));
-                lights[0]->setIntensity(0.5f);
-                lights[0]->setAmbientStrength(0.2f);
-                lights[0]->setDiffuseStrength(0.3f);
-                lights[0]->setSpecularStrength(0.5f);
-            }
-            ImGui::SameLine();
-            if (ImGui::Button("Studio")) {
-                lights[0]->setColor(glm::vec3(1.0f));
-                lights[0]->setIntensity(1.0f);
-                lights[0]->setAmbientStrength(0.3f);
-                lights[0]->setDiffuseStrength(0.9f);
-                lights[0]->setSpecularStrength(0.8f);
-            }
-            ImGui::TreePop();
-        }
+void RenderLightingControls(std::vector<std::shared_ptr<Light>> &lights) {
+  if (ImGui::CollapsingHeader("Lighting", ImGuiTreeNodeFlags_DefaultOpen)) {
+    // Add a Light button
+    if (ImGui::Button("Add Light")) {
+      lights.push_back(std::make_shared<Light>("Light " + std::to_string(lights.size() + 1)));
     }
+
+    // Light list
+    for (size_t i = 0; i < lights.size(); i++) {
+      auto &light = lights[i];
+      if (ImGui::TreeNode((light->getName() + "##" + std::to_string(i)).c_str())) {
+        // Position control
+        glm::vec3 position = light->getPosition();
+        if (Vec3Control("Position", position)) {
+          light->setPosition(position);
+        }
+
+        // Color control
+        glm::vec3 color = light->getColor();
+        if (ColorControl("Color", color)) {
+          light->setColor(color);
+        }
+
+        // Intensity slider
+        float intensity = light->getIntensity();
+        if (ImGui::SliderFloat("Intensity", &intensity, 0.0f, 2.0f)) {
+          light->setIntensity(intensity);
+        }
+
+        // Light properties
+        float ambient = light->getAmbientStrength();
+        if (ImGui::SliderFloat("Ambient", &ambient, 0.0f, 1.0f)) {
+          light->setAmbientStrength(ambient);
+        }
+
+        float diffuse = light->getDiffuseStrength();
+        if (ImGui::SliderFloat("Diffuse", &diffuse, 0.0f, 1.0f)) {
+          light->setDiffuseStrength(diffuse);
+        }
+
+        float specular = light->getSpecularStrength();
+        if (ImGui::SliderFloat("Specular", &specular, 0.0f, 1.0f)) {
+          light->setSpecularStrength(specular);
+        }
+
+        float shininess = light->getShininess();
+        if (ImGui::SliderFloat("Shininess", &shininess, 1.0f, 256.0f)) {
+          light->setShininess(shininess);
+        }
+
+        // Delete button
+        if (ImGui::Button("Delete") && lights.size() > 1) {
+          lights.erase(lights.begin() + i);
+          ImGui::TreePop();
+          break;
+        }
+
+        ImGui::TreePop();
+      }
+    }
+
+    // Lighting presets
+    if (ImGui::TreeNode("Lighting Presets")) {
+      if (ImGui::Button("Daylight")) {
+        lights[0]->setColor(glm::vec3(1.0f, 0.95f, 0.8f));
+        lights[0]->setIntensity(1.0f);
+        lights[0]->setAmbientStrength(0.3f);
+        lights[0]->setDiffuseStrength(0.7f);
+        lights[0]->setSpecularStrength(0.3f);
+      }
+      ImGui::SameLine();
+      if (ImGui::Button("Night")) {
+        lights[0]->setColor(glm::vec3(0.1f, 0.1f, 0.3f));
+        lights[0]->setIntensity(0.5f);
+        lights[0]->setAmbientStrength(0.2f);
+        lights[0]->setDiffuseStrength(0.3f);
+        lights[0]->setSpecularStrength(0.5f);
+      }
+      ImGui::SameLine();
+      if (ImGui::Button("Studio")) {
+        lights[0]->setColor(glm::vec3(1.0f));
+        lights[0]->setIntensity(1.0f);
+        lights[0]->setAmbientStrength(0.3f);
+        lights[0]->setDiffuseStrength(0.9f);
+        lights[0]->setSpecularStrength(0.8f);
+      }
+      ImGui::TreePop();
+    }
+  }
 }
 
 void RenderObjectControls(Sphere &sphere, CubeSphere &cubeSphere) {
@@ -516,8 +556,10 @@ void RenderObjectControls(Sphere &sphere, CubeSphere &cubeSphere) {
         sphere.setPosition(position);
       }
 
-      // Scale control with uniform scaling option
-      ImGui::Checkbox("Uniform Scale", &guiState.linkScaleValues);
+      float radius = sphere.getRadius();
+      if (ImGui::SliderFloat("Radius", &radius, 0.1F, 5.0F)) {
+        sphere.setRadius(radius);
+      }
 
       glm::vec3 scale = sphere.getScale();
       if (Vec3Control("Scale", scale, 1.0F, 0.1F, 0.1F, 10.0F)) {
@@ -558,16 +600,12 @@ void RenderObjectControls(Sphere &sphere, CubeSphere &cubeSphere) {
       ImGui::Spacing();
 
       // Position control
-      glm::vec3 position = cubeSphere.getPosition();
-      if (Vec3Control("Position", position)) {
+      if (glm::vec3 position = cubeSphere.getPosition(); Vec3Control("Position", position)) {
         cubeSphere.setPosition(position);
       }
 
-      // Scale control with uniform scaling option
-      ImGui::Checkbox("Uniform Scale", &guiState.linkScaleValues);
-
-      glm::vec3 scale = cubeSphere.getScale();
-      if (Vec3Control("Scale", scale, 1.0F, 0.1F, 0.1F, 10.0F)) {
+      if (glm::vec3 scale = cubeSphere.getScale();
+          Vec3Control("Scale", scale, 1.0F, 0.1F, 0.1F, 10.0F)) {
         cubeSphere.setScale(scale);
       }
 
@@ -589,7 +627,7 @@ void RenderObjectControls(Sphere &sphere, CubeSphere &cubeSphere) {
       HelpMarker("Controls mesh detail level. Higher values create smoother surfaces.");
 
       float size = cubeSphere.getSize();
-      if (ImGui::SliderFloat("Size", &size, 0.5F, 2.0F)) {
+      if (ImGui::SliderFloat("Size", &size, 0.1F, 2.0F)) {
         cubeSphere.setSize(size);
       }
       ImGui::SameLine();
@@ -628,7 +666,8 @@ void RenderObjectControls(Sphere &sphere, CubeSphere &cubeSphere) {
       ImGui::ColorEdit3("Color", &objectColor[0]);
 
       if (ImGui::Button("Create Object", ImVec2(ImGui::GetContentRegionAvail().x, 0))) {
-        CreateNewObject(objectName, newObjectType == 0 ? "Sphere" : "CubeSphere", objectPosition, objectColor, objectSize, objectResolution);
+        CreateNewObject(objectName, newObjectType == 0 ? "Sphere" : "CubeSphere", objectPosition,
+                        objectColor, objectSize, objectResolution);
 
         // Reset form
         strcpy(objectName, "New Object");
@@ -646,82 +685,83 @@ void RenderObjectControls(Sphere &sphere, CubeSphere &cubeSphere) {
 }
 
 void RenderObjectList() {
-    ImGui::Begin("Scene Objects");
+  ImGui::Begin("Scene Objects");
 
-    auto& objects = getScene().getObjects();
+  auto &objects = getScene().getObjects();
 
-    // Object List
-    ImGui::BeginChild("ObjectList", ImVec2(0, -ImGui::GetFrameHeightWithSpacing()));
-    for (size_t i = 0; i < objects.size(); i++) {
-        auto& obj = objects[i];
-        char label[128];
-        snprintf(label, sizeof(label), "%s##%zu", obj.name.c_str(), i);
+  // Object List
+  ImGui::BeginChild("ObjectList", ImVec2(0, -ImGui::GetFrameHeightWithSpacing()));
+  for (size_t i = 0; i < objects.size(); i++) {
+    auto &obj = objects[i];
+    char label[128];
+    snprintf(label, sizeof(label), "%s##%zu", obj.name.c_str(), i);
 
-        if (ImGui::Selectable(label, obj.selected)) {
-            // Deselect all other objects
-            for (auto& other : objects) {
-                other.selected = false;
-            }
-            obj.selected = true;
-        }
-
-        if (ImGui::BeginPopupContextItem()) {
-            if (ImGui::MenuItem("Delete")) {
-                getScene().removeObject(i);
-            }
-            if (ImGui::MenuItem("Rename")) {
-                // TODO: Implement rename functionality
-            }
-            ImGui::EndPopup();
-        }
+    if (ImGui::Selectable(label, obj.selected)) {
+      // Deselect all other objects
+      for (auto &other : objects) {
+        other.selected = false;
+      }
+      obj.selected = true;
     }
-    ImGui::EndChild();
 
-    ImGui::End();
+    if (ImGui::BeginPopupContextItem()) {
+      if (ImGui::MenuItem("Delete")) {
+        getScene().removeObject(i);
+      }
+      if (ImGui::MenuItem("Rename")) {
+        // TODO: Implement rename functionality
+      }
+      ImGui::EndPopup();
+    }
+  }
+  ImGui::EndChild();
+
+  ImGui::End();
 }
 
-void RenderGui(const FpsCounter& fpsCounter, std::shared_ptr<Sphere>& sphere, 
-               std::shared_ptr<CubeSphere>& cubeSphere, Renderer& renderer) {
-    static bool sceneUpdated = false;
+void RenderGui(const FpsCounter &fpsCounter, const std::shared_ptr<Sphere> &sphere,
+               const std::shared_ptr<CubeSphere> &cubeSphere, Renderer &renderer) {
+  static bool sceneUpdated = false;
 
-    // Setup ImGui style
-    SetupStyle();
+  // Setup ImGui style
+  SetupStyle();
 
-    // Render main menu bar
-    MainMenuBar(fpsCounter);
+  // Render main menu bar
+  MainMenuBar(fpsCounter);
 
-    // Performance window
-    PerformanceWindow(fpsCounter);
+  // Performance window
+  PerformanceWindow(fpsCounter);
 
-    // Object List window
-    RenderObjectList();
+  // Object List window
+  RenderObjectList();
 
-    // Main control panel
-    if (guiState.showControlPanel) {
-        ImGui::SetNextWindowPos(ImVec2(10, 30), ImGuiCond_FirstUseEver);
-        ImGui::SetNextWindowSize(ImVec2(guiState.mainPanelWidth, 600), ImGuiCond_FirstUseEver);
+  // Main control panel
+  if (guiState.showControlPanel) {
+    ImGui::SetNextWindowPos(ImVec2(10, 30), ImGuiCond_FirstUseEver);
+    ImGui::SetNextWindowSize(ImVec2(guiState.mainPanelWidth, 600), ImGuiCond_FirstUseEver);
 
-        ImGui::Begin("Control Panel", &guiState.showControlPanel);
+    ImGui::Begin("Control Panel", &guiState.showControlPanel);
 
-        if (ImGui::Button(guiState.currentTab == 0 ? "Scene Settings##active" : "Scene Settings")) {
-            guiState.currentTab = 0;
-        }
-        ImGui::SameLine();
-        if (ImGui::Button(guiState.currentTab == 1 ? "Object Properties##active" : "Object Properties")) {
-            guiState.currentTab = 1;
-        }
-
-        ImGui::Separator();
-
-        if (guiState.currentTab == 0) {
-            RenderSceneControls(renderer, sceneUpdated);
-            RenderLightingControls(renderer.getLights());
-        } else {
-            RenderObjectControls(*sphere, *cubeSphere);
-        }
-
-        ImGui::End();
+    if (ImGui::Button(guiState.currentTab == 0 ? "Scene Settings##active" : "Scene Settings")) {
+      guiState.currentTab = 0;
     }
+    ImGui::SameLine();
+    if (ImGui::Button(guiState.currentTab == 1 ? "Object Properties##active"
+                                               : "Object Properties")) {
+      guiState.currentTab = 1;
+    }
+
+    ImGui::Separator();
+
+    if (guiState.currentTab == 0) {
+      RenderSceneControls(renderer, sceneUpdated);
+      RenderLightingControls(renderer.getLights());
+    } else {
+      RenderObjectControls(*sphere, *cubeSphere);
+    }
+
+    ImGui::End();
+  }
 }
 
 } // namespace gui

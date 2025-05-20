@@ -2,7 +2,7 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /Users/redshifted/code/OrbitalSimulation/src/main.cpp \
   /Users/redshifted/code/OrbitalSimulation/external/glad/include/glad/glad.h \
   /Users/redshifted/code/OrbitalSimulation/external/glad/include/KHR/khrplatform.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stdint.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int8_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_int16_t.h \
@@ -27,17 +27,17 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/platform.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/availability.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__configuration/language.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stddef.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_ptrdiff_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/stddef.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_ptrdiff_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_size_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_size_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_size_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_va_list.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/stdarg.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_va_list.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/stdarg.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_va_list.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_wchar_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_wchar_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_wchar_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_null.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_null.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_null.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_intptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_uintptr_t.h \
@@ -47,17 +47,17 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /Users/redshifted/code/OrbitalSimulation/external/imgui/imgui.h \
   /Users/redshifted/code/OrbitalSimulation/external/imgui/imconfig.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/float.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/float.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/float.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_header_macro.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_va_arg.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg___va_copy.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stdarg_va_copy.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_header_macro.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_nullptr_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_max_align_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_offsetof.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_header_macro.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg___gnuc_va_list.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_va_arg.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg___va_copy.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stdarg_va_copy.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_header_macro.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_nullptr_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_max_align_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_offsetof.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_string.h \
@@ -257,7 +257,7 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__cstddef/ptrdiff_t.h \
   /Users/redshifted/code/OrbitalSimulation/external/glm/glm/detail/../simd/platform.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/climits \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/limits.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/machine/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/arm/limits.h \
@@ -928,7 +928,7 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_useconds_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_suseconds_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_rsize_t.h \
-  /opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include/__stddef_rsize_t.h \
+  /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_rsize_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_errno_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_fd_def.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/sys/_types/_fd_setsize.h \
@@ -1125,10 +1125,48 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stack \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/print \
   /Users/redshifted/code/OrbitalSimulation/src/GUI/gui.h \
-  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/cubeSphere.h \
-  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.h \
-  /Users/redshifted/code/OrbitalSimulation/src/Graphics/renderer.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/Object3D.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/ObjectVisitor.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/RenderVisitor.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/map \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__tree \
   /Users/redshifted/code/OrbitalSimulation/src/Graphics/shader.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/lighting/Light.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/SceneObject.h \
+  /Users/redshifted/code/OrbitalSimulation/src/core/fps_counter.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/chrono \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/file_clock.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/calendar.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/day.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/exception.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/hh_mm_ss.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/literals.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/local_info.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/month.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/month_weekday.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/weekday.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/monthday.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/sys_info.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year_month.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year_month_day.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year_month_weekday.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/formatter.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/concepts.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/convert_to_tm.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/utc_clock.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/zoned_time.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/ostream.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/sstream \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/parser_std_format_spec.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/forward_list \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/charconv \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_floating_point.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_result.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_integral.h \
+  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/to_chars.h \
+  /Users/redshifted/code/OrbitalSimulation/src/GUI/Scene.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/renderer.h \
   /Users/redshifted/code/OrbitalSimulation/src/core/window.h \
   /opt/homebrew/include/SDL3/SDL.h \
   /opt/homebrew/include/SDL3/SDL_stdinc.h \
@@ -1190,35 +1228,5 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/include/SDL3/SDL_tray.h \
   /opt/homebrew/include/SDL3/SDL_version.h \
   /opt/homebrew/include/SDL3/SDL_oldnames.h \
-  /Users/redshifted/code/OrbitalSimulation/src/core/fps_counter.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/chrono \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/file_clock.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/calendar.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/day.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/exception.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/hh_mm_ss.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/literals.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/local_info.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/month.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/month_weekday.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/weekday.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/monthday.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/sys_info.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year_month.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year_month_day.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/year_month_weekday.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/formatter.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/concepts.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/convert_to_tm.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/utc_clock.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/zoned_time.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/ostream.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/sstream \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__chrono/parser_std_format_spec.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/forward_list \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/charconv \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_floating_point.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_result.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_integral.h \
-  /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/to_chars.h
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/cubeSphere.h

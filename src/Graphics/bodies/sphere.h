@@ -36,6 +36,11 @@ public:
   int getSectorCount() const { return sectors; }
   int getStackCount() const { return stacks; }
   float getRadius() const { return radius; }
+  void setRadius(const float radius) {
+    this->radius = radius;
+    build();
+    setupBuffers();
+  }
 
 private:
   void build();
@@ -52,7 +57,7 @@ private:
   float radius;
   int sectors;
   int stacks;
-  glm::vec3 position{0.0f};
-  glm::vec3 scale{1.0f};
-  glm::vec3 color{1.0f};
+  glm::vec3 position{0.0F};
+  glm::vec3 scale{1.0F};
+  glm::vec3 color{1.0F};
 };

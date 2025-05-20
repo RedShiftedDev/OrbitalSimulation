@@ -1,7 +1,7 @@
 set(CMAKE_C_COMPILER "/opt/homebrew/opt/llvm/bin/clang")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "Clang")
-set(CMAKE_C_COMPILER_VERSION "20.1.2")
+set(CMAKE_C_COMPILER_VERSION "20.1.5")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -17,15 +17,16 @@ set(CMAKE_C23_COMPILE_FEATURES "c_std_23")
 set(CMAKE_C_PLATFORM_ID "Darwin")
 set(CMAKE_C_SIMULATE_ID "")
 set(CMAKE_C_COMPILER_FRONTEND_VARIANT "GNU")
+set(CMAKE_C_COMPILER_APPLE_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk")
 set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
 
 set(CMAKE_AR "/opt/anaconda3/bin/ar")
-set(CMAKE_C_COMPILER_AR "/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ar")
+set(CMAKE_C_COMPILER_AR "/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ar")
 set(CMAKE_RANLIB "/opt/homebrew/opt/llvm/bin/llvm-ranlib")
-set(CMAKE_C_COMPILER_RANLIB "/opt/homebrew/Cellar/llvm/20.1.2/bin/llvm-ranlib")
+set(CMAKE_C_COMPILER_RANLIB "/opt/homebrew/Cellar/llvm/20.1.5/bin/llvm-ranlib")
 set(CMAKE_LINKER "/opt/anaconda3/bin/ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
@@ -77,7 +78,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/20.1.2/lib/clang/20/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks")

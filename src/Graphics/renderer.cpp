@@ -119,9 +119,7 @@ void Renderer::registerShader(const std::string &objectType,
 }
 
 void Renderer::renderGrid() const {
-  if (!settings.showGrid) {
-    return;
-  }
+  if (!settings.showGrid) return;
 
   glEnable(GL_BLEND);
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -130,10 +128,20 @@ void Renderer::renderGrid() const {
   gridShader->setMat4("projection", projectionMatrix);
   gridShader->setMat4("view", viewMatrix);
   gridShader->setMat4("model", glm::mat4(1.0f));
+  
+  // Set all grid uniforms
   gridShader->setVec3("gridColor", settings.gridColor);
+  gridShader->setVec3("majorGridColor", settings.majorGridColor);
   gridShader->setFloat("fadeDistance", settings.gridFadeDistance);
   gridShader->setFloat("gridSize", settings.gridSize);
   gridShader->setInt("gridDivisions", settings.gridDivisions);
+  gridShader->setFloat("majorGridSpacing", settings.majorGridSpacing);
+  gridShader->setFloat("minorLineWidth", settings.minorLineWidth);
+  gridShader->setFloat("majorLineWidth", settings.majorLineWidth);
+  gridShader->setFloat("gridOpacity", settings.gridOpacity);
+  gridShader->setBool("showAxisLines", settings.showAxisLines);
+  gridShader->setVec3("xAxisColor", settings.xAxisColor);
+  gridShader->setVec3("zAxisColor", settings.zAxisColor);
 
   glBindVertexArray(gridVAO);
   glDrawArrays(GL_LINES, 0, (settings.gridDivisions + 1) * 4);
