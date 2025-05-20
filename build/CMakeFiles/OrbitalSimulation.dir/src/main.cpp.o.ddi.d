@@ -1124,6 +1124,7 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/deque \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/stack \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/print \
+  /Users/redshifted/code/OrbitalSimulation/src/GUI/Scene.h \
   /Users/redshifted/code/OrbitalSimulation/src/GUI/gui.h \
   /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/Object3D.h \
   /Users/redshifted/code/OrbitalSimulation/src/Graphics/core/ObjectVisitor.h \
@@ -1165,7 +1166,7 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_result.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/from_chars_integral.h \
   /opt/homebrew/opt/llvm/bin/../include/c++/v1/__charconv/to_chars.h \
-  /Users/redshifted/code/OrbitalSimulation/src/GUI/Scene.h \
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/cubeSphere.h \
   /Users/redshifted/code/OrbitalSimulation/src/Graphics/renderer.h \
   /Users/redshifted/code/OrbitalSimulation/src/core/window.h \
   /opt/homebrew/include/SDL3/SDL.h \
@@ -1228,5 +1229,4 @@ CMakeFiles/OrbitalSimulation.dir/src/main.cpp.o.ddi: \
   /opt/homebrew/include/SDL3/SDL_tray.h \
   /opt/homebrew/include/SDL3/SDL_version.h \
   /opt/homebrew/include/SDL3/SDL_oldnames.h \
-  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.h \
-  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/cubeSphere.h
+  /Users/redshifted/code/OrbitalSimulation/src/Graphics/bodies/sphere.h

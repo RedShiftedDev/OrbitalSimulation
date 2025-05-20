@@ -45,12 +45,10 @@ void Window::pollEvents() {
   while (SDL_PollEvent(&event)) {
     ImGui_ImplSDL3_ProcessEvent(&event);
     if (event.type == SDL_EVENT_QUIT) {
-      isRunning = false;
+      setState(false);
     }
   }
 }
-
-bool Window::shouldClose() const { return !isRunning; }
 
 SDL_Window *Window::getSDLWindow() const { return window; }
 
