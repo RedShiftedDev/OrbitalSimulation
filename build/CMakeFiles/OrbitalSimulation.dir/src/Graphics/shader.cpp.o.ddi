@@ -1,9 +1,0 @@
-{
-  "revision": 0,
-  "rules": [
-    {
-      "primary-output": "CMakeFiles/OrbitalSimulation.dir/src/Graphics/shader.cpp.o"
-    }
-  ],
-  "version": 1
-}
