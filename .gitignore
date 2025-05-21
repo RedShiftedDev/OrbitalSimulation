@@ -1,4 +1,4 @@
-.DS_Store
+.DS_Store/
 build/
 cmake-build-debug/
 .cache/
